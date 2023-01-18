@@ -12,5 +12,6 @@
     "nodejs"
   ],
   "author": "irfan",
-  "license": "ISC"
+  "license": "ISC",
+  "type"  : "module"
 }
