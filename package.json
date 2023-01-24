@@ -2,8 +2,15 @@
   "name": "belajar-nodejs-npm",
   "version": "1.0.0",
   "description": "Belajar NPM pada NodeJS",
-  "main": "index.js",
+ "exports":{
+".": "./index.js",
+"./write" : "./write.js"
+ },
   "scripts": {
+    "prestart": "echo 'Before Application Start'",
+    "start": "node index.js",
+    "poststart": "echo 'After Application Start'",
+    "run" : "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,5 +20,8 @@
   ],
   "author": "irfan",
   "license": "ISC",
-  "type"  : "module"
+  "type"  : "module",
+  "dependencies": {
+    "lodash": "4.17.21"
+  }
 }
